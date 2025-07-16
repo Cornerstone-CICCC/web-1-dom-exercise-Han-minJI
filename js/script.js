@@ -10,6 +10,8 @@ const output3 = document.querySelector("#output3")
 
 const btn4 = document.querySelector("#btn4")
 const output4 = document.querySelector("#output4")
+const output4Ps = document.querySelectorAll("#output4 p")
+
 
 const btn5 = document.querySelector("#btn5")
 const output5 = document.querySelector("#output5")
@@ -32,8 +34,9 @@ btn3.addEventListener('click', () => {
 })
 
 btn4.addEventListener('click', () => {
-  output4.firstElementChild.style.color="red"
-  output4.firstElementChild.nextElementSibling.style.color="red"
+  output4Ps.forEach(p => {
+    p.style.color = "red"
+  })
 })
 
 btn5.addEventListener('click', () => {
